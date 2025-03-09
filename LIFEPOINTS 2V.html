@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototipo</title>
+    <link rel="icon" href="descarga.jpg" type="descarga/jpg">
+    <style>
+        body {
+            text-align: center;
+            background-color: black;
+            background-image: url('https://i.pinimg.com/1200x/f5/6f/d2/f56fd2a7329ce2fd5df494b8e80e2290.jpg');
+         } 
+        h1 {
+            color: white;
+            font-family: monospace;
+            visibility: visible;
+        } button {
+            background-color: yellow;
+            border-radius: 100px;
+            width: 100px;
+            height: 100px;
+        } .content {
+            border: solid white 10px;
+        } .content2 {
+            border: solid white 10px;
+        }
+    </style>
+
+<script>
+    let i = 8000;
+    let x = 8000;
+    const p_layer1 = document.getElementById("player1"); 
+    const p_layer2 = document.getElementById("player2"); 
+    function cdliked1() { 
+        i += 1;
+     player1.textContent = i; 
+     }
+     function cdliked2() { 
+        i += 10;
+     player1.textContent = i; 
+     }
+     function cdliked3() { 
+        i += 100;
+     player1.textContent = i; 
+     }
+     function cdliked4() { 
+        i += 1000;
+     player1.textContent = i; 
+     }  function cdliked5() {
+        if (i <= 1)  {
+     alert("perdiste jugador 1...jugador 2 gandor")
+     i = 8000
+     player1.textContent = i; 
+    } else {
+        i -= 1;
+     player1.textContent = i; 
+     }
+    } 
+    function cdliked6() {
+        if (i <= 1)  {
+     alert("perdiste jugador 1...jugador 2 gandor")
+     i = 8000
+     player1.textContent = i; 
+    } else {
+        i -= 10;
+     player1.textContent = i; 
+     }
+    } 
+    function cdliked7() {
+        if (i <= 1)  {
+     alert("perdiste jugador 1...jugador 2 gandor")
+     i = 8000
+     player1.textContent = i; 
+    } else {
+        i -= 100;
+     player1.textContent = i; 
+     }
+    }
+    function cdliked8() {
+        if (i <= 1)  {
+     alert("perdiste jugador 1...jugador 2 ganador")
+     i = 8000
+     player1.textContent = i; 
+    } else {
+        i -= 1000;
+     player1.textContent = i; 
+     }
+    }
+    //espacio//
+    function cliked1() { 
+        x += 1;
+     player2.textContent = x; 
+     }
+     function cliked2() { 
+        x += 10;
+     player2.textContent = x; 
+     }
+     function cliked3() { 
+        x += 100;
+     player2.textContent = x; 
+     }
+     function cliked4() { 
+        x += 1000;
+     player2.textContent = x; 
+     }  function cliked5() {
+        if (x <= 1)  {
+     alert("perdiste jugador 2...jugador 1 gandor")
+     x = 8000
+     player2.textContent = x; 
+    } else {
+        x -= 1;
+     player2.textContent = x; 
+     }
+    } 
+    function cliked6() {
+        if (x <= 1)  {
+     alert("perdiste jugador 2...jugador 1 gandor")
+     x = 8000
+     player2.textContent = x; 
+    } else {
+        x -= 10;
+     player2.textContent = x; 
+     }
+    } 
+    function cliked7() {
+        if (x <= 1)  {
+     alert("perdiste jugador 2...jugador 1 gandor")
+     x = 8000
+     player2.textContent = x; 
+    } else {
+        x -= 100;
+     player2.textContent = x; 
+     }
+    }
+    function cliked8() {
+        if (x <= 1)  {
+     alert("perdiste jugador 2...jugador 1 ganador")
+     x = 8000
+     player2.textContent = x; 
+    } else {
+        x -= 1000;
+     player2.textContent = x; 
+     }
+    }
+    function reset1() {
+      i = 8000
+      player1.textContent = i; 
+      alert("los puntos de vida se reiniciaron")
+    }
+    function reset2() {
+      x = 8000 
+      player2.textContent = x; 
+      alert("los puntos de vida se reiniciaron")
+    }
+</script>
+</head>
+<body>
+    <h1>p1</h1>
+ <div class = "content">
+ <button onclick=cdliked1()>1+</button>
+ <button onclick=cdliked2()>10+</button>
+ <button onclick=cdliked3()>100+</button>
+ <button onclick=cdliked4()>1000+</button>
+ <button onclick=cdliked5()>1-</button>
+ <button onclick=cdliked6()>10-</button>
+ <button onclick=cdliked7()>100-</button>
+ <button onclick=cdliked8()>1000-</button>
+ <button onclick=reset1()>reset</button>
+    <h1 id="player1">8000</h1>
+ </div>
+  <div class = "content2">
+    <button onclick=cliked1()>1+</button>
+    <button onclick=cliked2()>10+</button>
+    <button onclick=cliked3()>100+</button>
+    <button onclick=cliked4() >1000+</button>
+    <button onclick=cliked5()>1-</button>
+    <button onclick=cliked6()>10-</button>
+    <button onclick=cliked7()>100-</button>
+    <button onclick=cliked8()>1000-</button>
+    <button onclick=reset2()>reset</button>
+       <h1 id="player2">8000</h1>
+  </div>
+  <h1>p2</h1>
+</body>
+</html>
